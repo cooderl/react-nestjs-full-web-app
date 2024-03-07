@@ -1,0 +1,24 @@
+{
+  "name": "react-nestjs-full-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8.6.1",
+    "vscode": ">=1.79"
+  },
+  "keywords": [],
+  "author": "cooderl <cooderl@111965.xyz>",
+  "license": "",
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run -r build",
+    "build:server": "pnpm --filter server build",
+    "build:web": "pnpm --filter web build",
+    "start": "pnpm --filter server start:prod",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check ."
+  }
+}
